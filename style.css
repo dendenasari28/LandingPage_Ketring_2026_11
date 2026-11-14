@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* 
+ font-family: "Asap Sharp", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Fraunces", serif;
+
+*/
+
+:root {
+  --Hijauutama: #2d663d;
+  --Hijausage: #618971;
+  --Putih: #fbfbfb;
+  --Abu: #7a7f78;
+  --Hitamlembut: #111312;
+  --AbuTua: #222422;
+  --Merahtomat: #e9301b;
+}
