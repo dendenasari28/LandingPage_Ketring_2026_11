@@ -5,6 +5,8 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Asap Sharp", sans-serif;
+  font-size: 16px;
 }
 
 /* 
@@ -23,4 +25,77 @@
   --Hitamlembut: #111312;
   --AbuTua: #222422;
   --Merahtomat: #e9301b;
+}
+/* navbar */
+nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 5%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+nav .logo {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+nav .logo img {
+  width: 140px;
+}
+/* menus */
+nav .menus {
+  position: relative;
+  width: 50%;
+  display: flex;
+}
+nav .menus {
+  width: 50%;
+  display: flex;
+}
+nav .menus a {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  color: var(--Hitamlembut);
+  font-weight: 600;
+}
+nav .menus a::after {
+  position: absolute;
+  content: "";
+  border-bottom: 3px solid var(--Merahtomat);
+  width: 0;
+  bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+nav .menus a:hover::after {
+  width: 100px;
+}
+/* navbar tbl */
+nav .tbl {
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease out;
+}
+nav .tbl a {
+  padding: 8px 16px;
+  background-color: var(--Hijausage);
+  color: var(--Putih);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* responsive  */
+
+/* lebar layar HP */
+@media screen and (min-width: 480px) {
+  /* navbar */
+}
+
+/* lebar layar tablet */
+@media screen and (min-width: 768px) {
+  /* navbar */
 }
