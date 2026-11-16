@@ -87,9 +87,70 @@ nav .tbl #pesan:hover {
   display: none;
 }
 
+/* hero  */
+.hero {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+.hero .bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+.hero .bg::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to right, rgba(41, 3, 116, 0.7), transparent);
+}
+.hero .bg img {
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.hero .konten {
+  position: absolute;
+  top: 130px;
+  left: 6%;
+  color: var(--Putih);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.konten h1 {
+  width: 70%;
+  font-size: 100px;
+  text-shadow: 0 5px 6px rgba(245, 156, 1, 0.8);
+}
+.konten p {
+  width: 500px;
+  font-size: 14px;
+}
+.konten .cta {
+  width: 300px;
+  display: flex;
+  gap: 30px;
+}
+.konten .cta a {
+  background-color: var(--Merahtomat);
+  color: var(--Putih);
+  padding: 8px 10px;
+  border-radius: 12px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.hero .cta a:hover {
+  background-color: var(--Hijausage);
+}
 /* responsive */
 /* responsive di handphone */
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   html {
     font-size: 70%;
   }
@@ -106,8 +167,34 @@ nav .tbl #pesan:hover {
   #tombol {
     display: inline;
   }
-  nav .menus .tbl {
-    width: 230px;
+  nav .tbl {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  nav .tbl span {
+    display: none;
+  }
+  nav .tbl #pesan {
+    background-color: transparent;
+    color: var(--Hitamlembut);
+  }
+  nav .tbl i {
+    font-size: 18px;
+    color: var(--Hijauutama);
   }
 }
-/* responsive di handphone */
+/* responsive */
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  nav .tbl {
+    width: 100px;
+  }
+  nav .tbl #pesan {
+    padding: 8px;
+  }
+}
