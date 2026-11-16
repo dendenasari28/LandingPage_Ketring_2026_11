@@ -26,98 +26,88 @@
   --Merahtomat: #e9301b;
 }
 /* navbar */
-body {
-  width: 100%;
-}
 nav {
   width: 100%;
-  height: 70px;
   display: flex;
   justify-content: space-around;
-  padding: 10px 5%;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-nav .logo {
-  width: 200px;
-  display: flex;
-  justify-content: center;
+  padding: 10px 6%;
+  box-shadow: 0 2px 4px rgba(44, 47, 44, 0.1);
 }
 nav .logo img {
-  width: 140px;
-}
-/* menus */
-nav .menus {
-  position: relative;
-  width: 50%;
-  display: flex;
+  width: 130px;
 }
 nav .menus {
-  width: 50%;
-  display: flex;
+  display: relative;
 }
 nav .menus a {
   position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
+  display: inline-block;
+  margin: 10px 20px;
   color: var(--Hitamlembut);
-  font-weight: 600;
+  font-weight: 500;
 }
 nav .menus a::after {
-  position: absolute;
   content: "";
-  border-bottom: 3px solid var(--Merahtomat);
+  position: absolute;
+  display: block;
+  border-bottom: 2px solid var(--Hijausage);
+  top: 23px;
   width: 0;
-  bottom: 10px;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s linear;
 }
+/* hover menus */
 nav .menus a:hover::after {
-  width: 50px;
+  width: 100%;
 }
-/* navbar tbl */
 nav .tbl {
   width: 20%;
-  background-color: red;
   display: flex;
-  align-items: center;
+  justify-content: space-around;
   gap: 30px;
-  transition: 0.3s ease out;
+  align-items: center;
+}
+nav .tbl .tombol {
+  width: 130px;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  transition: 0.2s linear;
 }
 nav .tbl #pesan {
-  padding: 8px 16px;
-  background-color: var(--Hijausage);
-  color: var(--Putih);
+  background-color: var(--Hijauutama);
   border-radius: 12px;
-  cursor: pointer;
-  transition: 0.2s linear;
+  color: var(--Putih);
 }
 nav .tbl #pesan:hover {
   background-color: var(--Merahtomat);
+  color: var(--Putih);
+  cursor: pointer;
 }
-#tombol i {
+#tombol {
   display: none;
-  font-size: 22px;
-}
-/* responsive  */
-/* handphone */
-@media (max-width: 600px) {
-  nav .menus a {
-    right: -200%;
-  }
- 
-  #tombol i {
-    display: inline-block;
-  }
 }
 
-/* responsive unutk di tablet */
-@media (max-width: 768px) {
+/* responsive */
+/* responsive di handphone */
+@media (max-width: 600px) {
+  html {
+    font-size: 70%;
+  }
+  nav {
+    height: 50px;
+  }
+  nav .logo img {
+    width: 90px;
+  }
   nav .menus a {
+    transition: 0.3s ease;
     right: -200%;
   }
-  #tombol i {
-    display: inline-block;
+  #tombol {
+    display: inline;
+  }
+  nav .menus .tbl {
+    width: 230px;
   }
 }
+/* responsive di handphone */
