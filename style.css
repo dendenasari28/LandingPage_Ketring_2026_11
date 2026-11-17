@@ -107,7 +107,7 @@ nav .tbl #pesan:hover {
   left: 0;
   right: 0;
   height: 100%;
-  background: linear-gradient(to right, rgba(41, 3, 116, 0.7), transparent);
+  background: linear-gradient(to right, rgba(9, 3, 20, 0.9), transparent);
 }
 .hero .bg img {
   width: 100%;
@@ -148,7 +148,51 @@ nav .tbl #pesan:hover {
 .hero .cta a:hover {
   background-color: var(--Hijausage);
 }
-/* responsive */
+
+/* medsos */
+.medsos {
+  position: absolute;
+  background-color: var(--Hijauutama);
+  padding: 50px;
+  width: 70%;
+  left: 200px;
+  bottom: -90px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  border-radius: 20px;
+}
+.medsos i {
+  font-size: 25px;
+  color: var(--Putih);
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.medsos i:nth-child(1):hover {
+  color: blue;
+}
+.medsos i:nth-child(2):hover {
+  color: red;
+}
+.medsos i:nth-child(3):hover {
+  color: black;
+}
+.medsos i:nth-child(4):hover {
+  color: rgb(226, 67, 93);
+}
+.medsos i:nth-child(5):hover {
+  color: black;
+}
+.medsos i:nth-child(6):hover {
+  color: rgb(49, 104, 243);
+}
+
+/*  
+*
+* /* responsive 
+*
+*/
+
 /* responsive di handphone */
 @media (max-width: 450px) {
   html {
@@ -164,6 +208,7 @@ nav .tbl #pesan:hover {
     transition: 0.3s ease;
     right: -200%;
   }
+
   #tombol {
     display: inline;
   }
@@ -183,6 +228,41 @@ nav .tbl #pesan:hover {
   nav .tbl i {
     font-size: 18px;
     color: var(--Hijauutama);
+  }
+  /* responsive hero */
+
+  .hero .bg {
+    width: 200%;
+    left: -200px;
+    object-fit: contain;
+  }
+
+  .hero .bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgb(32, 12, 1));
+    z-index: -1;
+  }
+  .hero .konten {
+    top: 350px;
+  }
+  .hero .konten h1 {
+    font-size: 40px;
+  }
+  .hero .konten p {
+    width: 90%;
+    font-size: 12px;
+  }
+  .hero .cta {
+    display: flex;
+    width: 80%;
+    margin: 20px;
+  }
+  .hero .cta a {
+    display: inline-block;
+    width: 100%;
+    align-items: center;
   }
 }
 /* responsive */
