@@ -152,21 +152,23 @@ nav .tbl #pesan:hover {
 /* medsos */
 .medsos {
   position: absolute;
-  background-color: var(--Hijauutama);
   padding: 50px;
   width: 70%;
   left: 200px;
-  bottom: -90px;
+  bottom: -70px;
   display: flex;
   justify-content: center;
   gap: 30px;
   border-radius: 20px;
 }
 .medsos i {
-  font-size: 25px;
+  padding: 10px;
+  font-size: 22px;
   color: var(--Putih);
   cursor: pointer;
   transition: 0.3s ease-in;
+  border-radius: 50%;
+  background-color: var(--Hijauutama);
 }
 .medsos i:nth-child(1):hover {
   color: blue;
@@ -187,6 +189,39 @@ nav .tbl #pesan:hover {
   color: rgb(49, 104, 243);
 }
 
+/* galeryy */
+.menus-menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 50px;
+  padding: 20px 6%;
+}
+.menus-menu .card {
+  background-color: rgba(224, 238, 230, 0.8);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  gap: 10px;
+  border-radius: 12px;
+}
+.card i {
+  font-size: 45px;
+  color: var(--Hijauutama);
+}
+.card h3 {
+  font-size: 16px;
+}
+.card p {
+  margin: 12px;
+  font-size: 13px;
+  text-align: center;
+  color: rgb(84, 85, 84);
+}
+
 /*  
 *
 * /* responsive 
@@ -197,6 +232,7 @@ nav .tbl #pesan:hover {
 @media (max-width: 450px) {
   html {
     font-size: 70%;
+    overflow-x: hidden;
   }
   nav {
     height: 50px;
@@ -264,17 +300,52 @@ nav .tbl #pesan:hover {
     width: 100%;
     align-items: center;
   }
+
+  /* medsos */
+  .medsos {
+    top: 0;
+    position: relative;
+    height: 20vh;
+    width: 80%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    left: 50px;
+    flex-wrap: wrap;
+  }
+  .medsos i {
+    font-size: 30px;
+    border-radius: 50%;
+  }
+
+  /* gallery */
+  .menus-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+  }
 }
 /* responsive */
 /* tablet */
 @media (max-width: 768px) {
   html {
-    font-size: 80%;
+    overflow-x: hidden;
   }
   nav .tbl {
-    width: 100px;
+    width: 70px;
   }
-  nav .tbl #pesan {
-    padding: 8px;
+  nav .menus a {
+    display: inline;
+    width: 70%;
+    background-color: red;
+  }
+  /* conten */
+  .konten h4 {
+    font-size: 20px;
+  }
+  .konten h1 {
+    width: 100%;
+    font-size: 60%;
   }
 }
